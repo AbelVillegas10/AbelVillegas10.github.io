@@ -1,0 +1,28 @@
+body{
+    background-color: gray;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+#contenedor{
+    width: 90%;
+    margin: 5px auto;
+    border: 1px gold inset;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+#cabecera{
+    background:linear-gradient(to bottom, rgb(11, 199, 206), rgb(218, 11, 125));
+    height: 110px;
+}
+
+a:active{
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color:tomato;
+}
