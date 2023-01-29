@@ -1,0 +1,74 @@
+body {
+    background-image: url(../IMG/luna.jpg);
+    perspective: 500px;
+    perspective-origin: 50% 90%;
+}
+
+section {
+    font-size: 20px;
+}
+
+p {
+    font-size: 36px;
+}
+
+header {
+    width: 19%;
+    margin: 30px;
+    padding: 15px;
+    border: 5px dashed #CCCCCC;
+    box-shadow: rgb(150, 150, 150) 5px 5px 10px;
+    filter: blur(1.4px);
+    backface-visibility: hidden;
+    transition: transform 1s ease-in-out 0s;
+    animation: mianimacion 1s ease-in-out 0s infinite normal none; 
+}
+
+@keyframes mianimacion {
+    20% {
+        background: #FFFFFF;
+    }
+
+    35% {
+        transform: scale(0.5);
+        background: blue;
+    }
+
+    50% {
+        transform: scale(1.5);
+        background: #FF0000;
+    }
+
+    80% {
+        background: black;
+    }
+}
+
+header:hover {
+    transform: rotate(5deg);
+}
+
+#titulo {
+    font: bold 20px MiEstiloPersonal, Verdana, sans-serif;
+    color: lightblue;
+    background-color: tomato;
+
+}
+
+#descripcion {
+    text-align: center;
+    font-size: 1.1em;
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@font-face {
+    font-family: "MiEstiloPersonal";
+    src: url("../Hercules/Hercules.ttf");
+}

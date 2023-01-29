@@ -1,0 +1,10 @@
+section > p{
+    font-size: 31px;
+    color: tomato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p ~ p { 
+    font-size: 20px; 
+    color: rebeccapurple;
+   }
