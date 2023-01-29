@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <section>
+        <form name="formulario" method="get" action="procesar.php">
+            <p><label for="nombre">Nombre <input type="text" name="nombre"></label></p>
+            <p><label for="edad">Edad <input type="range" name="edad" min="15" max="100" value="35"></label></p>
+            <p><input type="submit" value="Enviar Datos"></p>
+<br><br><br><br>
+            <p>Ejemplo edad 2</p>
+            <p><label><input type="radio" name="edad15" value="15" checked> 15
+                    Años</label></p>
+            <p><label><input type="radio" name="edad30" value="30"> 30
+                    Años</label></p>
+            <p><label><input type="radio" name="edad45" value="45"> 45
+                    Años</label></p>
+            <p><label><input type="radio" name="edad60" value="60"> 60
+                    Años</label></p> <br><br><br>
+            <p><label for="fecha">Fecha: <input type="month" name="fecha" value="2017-02"></label></p>
+            <p><input type="image" src="IMG/enviar.png" width="100"></p> <br><br><br>
+            <p>Área de texto donde se inserta cierta cantidad de mensajes</p>
+            <p><label>Texto: <textarea name="texto" cols="50" rows="10">Comienza a escribir</textarea></label></p>
+            
+            <br>
+
+            <p>Listado</p>
+            <p>
+                <label for="listado">Libros: </label>
+                <select name="libro" id="listado">
+                    <option value="1">IT</option>
+                    <option value="2">Carrie</option>
+                    <option value="3">El Resplandor</option>
+                    <option value="4">Misery</option>
+                </select>
+            </p>
+
+            <br><br>
+
+            <p>Listado 2</p>
+            <datalist id="datos"> 
+                <option value="5522018272" label="Teléfono 1"> 
+                <option value="5535332532" label="Teléfono 2"> 
+                </datalist> 
+                <p><label>Teléfono: <input type="tel" name="telefono" 
+               list="datos"></label></p> 
+<br><br>
+               <p>Barra de progreso</p>
+               <progress value="80" max="100"></progress><p>80%</p>
+        </form>
+    </section>
+</body>
+
+</html>
