@@ -1,0 +1,9 @@
+#articulonoticias { 
+    width: 580px; 
+    padding: 10px; 
+    border: 3px dashed darkblue; 
+    column-count: 2; 
+    column-gap: 20px; 
+    column-rule: 3px dashed tomato; 
+    font-family: Arial, Helvetica, sans-serif;
+   }

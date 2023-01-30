@@ -1,0 +1,13 @@
+section { 
+    background-color: #CCCCCC; 
+    overflow: auto; 
+   } 
+
+section img { 
+    float: right; 
+    margin: 0px 10px; 
+   } 
+   
+   .clearfloat { 
+    clear: both; 
+   } 
