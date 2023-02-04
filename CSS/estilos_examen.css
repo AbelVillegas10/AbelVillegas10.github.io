@@ -1,0 +1,231 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background: url(../IMG/garoucos.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor .logo {
+    flex: 1 1 auto;
+}
+
+.contenedor .menu {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+}
+
+.contenedor .texto1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.contenedor .texto2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor .nav {
+    flex: 5 1 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: tomato;
+    padding-right: 20px;
+}
+
+.nav a:hover {
+    color: springgreen;
+    font-size: medium;
+}
+
+.seccion {
+    display: flex;
+}
+
+.seccion .articulos {
+    flex: 2 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.seccion .articulo {
+    font-size: 1em;
+    flex: 1 1 25%;
+    margin: 10px 10px 0px 0px;
+    background: url(../IMG/morado.jpg);
+}
+
+.seccion .articulo p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.articulo a{
+    color: lightseagreen;
+    font-size: .9em;
+    display: inline-block;
+}
+
+.seccion .navegacion {
+    flex: 1 1 50%;
+    background: url(../IMG/morado.jpg)
+}
+
+.navegacion a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    color: black;
+}
+
+.navegacion a:hover{
+    color: red;
+    text-decoration: solid;
+}
+
+.seccion .info {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.info .publicidad p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9em;
+    background: url(../IMG/morado.jpg);
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.form .formulario{
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9em;
+    align-items: center;
+}
+
+.form .formulario .enviar {
+    width: 30%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.footer .copy{
+    flex: 1 1 40%;
+}
+
+.copy a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    color: black;
+}
+
+.footer .redes {
+    flex: 1 1 30%;
+}
+
+.redes a{
+    color: black;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.redes a:hover{
+    color: tomato;
+    font-size: 25px;
+}
+
+.footer .contacto {
+    flex: 1 1 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 800px) {
+    .seccion {
+        flex-direction: column;
+    }
+
+    .contenedor .menu {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .contenedor .logo {
+        width: 100%;
+    }
+
+    .publicidad {
+        display: flex;
+        justify-content: center;
+    }
+
+    aside {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .seccion .articulo {
+        flex-direction: column;
+    }
+}
+
+@media screen and(max-width: 500px) {
+    .aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .publicidad {
+        width: auto;
+    }
+}
